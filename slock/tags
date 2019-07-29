@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGBEGIN	arg.h	12;"	d
+ARGC	arg.h	47;"	d
+ARGEND	arg.h	44;"	d
+ARGF	arg.h	57;"	d
+ARGNUM	arg.h	33;"	d
+ARGNUMF	arg.h	49;"	d
+ARG_H__	arg.h	7;"	d
+CC	config.mk	/^CC = cc$/;"	m
+CFLAGS	config.mk	/^CFLAGS = -std=c99 -pedantic -Wall -Os ${INCS} ${CPPFLAGS}$/;"	m
+COMPATSRC	config.mk	/^COMPATSRC = explicit_bzero.c$/;"	m
+CPPFLAGS	config.mk	/^CPPFLAGS = -DVERSION=\\"${VERSION}\\" -D_DEFAULT_SOURCE -DHAVE_SHADOW_H$/;"	m
+EARGF	arg.h	51;"	d
+FAILED	slock.c	/^	FAILED,$/;"	e	enum:__anon1	file:
+INCS	config.mk	/^INCS = -I. -I\/usr\/include -I${X11INC}$/;"	m
+INIT	slock.c	/^	INIT,$/;"	e	enum:__anon1	file:
+INPUT	slock.c	/^	INPUT,$/;"	e	enum:__anon1	file:
+LDFLAGS	config.mk	/^LDFLAGS = -s ${LIBS}$/;"	m
+LIBS	config.mk	/^LIBS = -L\/usr\/lib -lc -lcrypt -L${X11LIB} -lX11 -lXext -lXrandr$/;"	m
+LNGARG	arg.h	63;"	d
+MANPREFIX	config.mk	/^MANPREFIX = ${PREFIX}\/share\/man$/;"	m
+NUMCOLS	slock.c	/^	NUMCOLS$/;"	e	enum:__anon1	file:
+OBJ	Makefile	/^OBJ = ${SRC:.c=.o}$/;"	m
+PREFIX	config.mk	/^PREFIX = \/usr\/local$/;"	m
+SRC	Makefile	/^SRC = slock.c ${COMPATSRC}$/;"	m
+VERSION	config.mk	/^VERSION = 1.4$/;"	m
+X11INC	config.mk	/^X11INC = \/usr\/X11R6\/include$/;"	m
+X11LIB	config.mk	/^X11LIB = \/usr\/X11R6\/lib$/;"	m
+_XOPEN_SOURCE	slock.c	2;"	d	file:
+__explicit_bzero_hook	explicit_bzero.c	/^__explicit_bzero_hook(void *buf, size_t len)$/;"	f
+active	slock.c	/^	int active;$/;"	m	struct:xrandr	file:
+argv0	slock.c	/^char *argv0;$/;"	v
+colorname	config.def.h	/^static const char *colorname[NUMCOLS] = {$/;"	v
+colorname	config.h	/^static const char *colorname[NUMCOLS] = {$/;"	v
+colors	slock.c	/^	unsigned long colors[NUMCOLS];$/;"	m	struct:lock	file:
+die	slock.c	/^die(const char *errstr, ...)$/;"	f	file:
+dontkillme	slock.c	/^dontkillme(void)$/;"	f	file:
+errbase	slock.c	/^	int errbase;$/;"	m	struct:xrandr	file:
+evbase	slock.c	/^	int evbase;$/;"	m	struct:xrandr	file:
+explicit_bzero	explicit_bzero.c	/^explicit_bzero(void *buf, size_t len)$/;"	f
+explicit_bzero	util.h	1;"	d
+failonclear	config.def.h	/^static const int failonclear = 1;$/;"	v
+failonclear	config.h	/^static const int failonclear = 1;$/;"	v
+gethash	slock.c	/^gethash(void)$/;"	f	file:
+group	config.def.h	/^static const char *group = "nogroup";$/;"	v
+group	config.h	/^static const char *group = "nogroup";$/;"	v
+lock	slock.c	/^struct lock {$/;"	s	file:
+lockscreen	slock.c	/^lockscreen(Display *dpy, struct xrandr *rr, int screen)$/;"	f	file:
+main	slock.c	/^main(int argc, char **argv) {$/;"	f
+pmap	slock.c	/^	Pixmap pmap;$/;"	m	struct:lock	file:
+readpw	slock.c	/^readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,$/;"	f	file:
+root	slock.c	/^	Window root, win;$/;"	m	struct:lock	file:
+screen	slock.c	/^	int screen;$/;"	m	struct:lock	file:
+usage	slock.c	/^usage(void)$/;"	f	file:
+user	config.def.h	/^static const char *user  = "nobody";$/;"	v
+user	config.h	/^static const char *user  = "nobody";$/;"	v
+win	slock.c	/^	Window root, win;$/;"	m	struct:lock	file:
+xrandr	slock.c	/^struct xrandr {$/;"	s	file:
